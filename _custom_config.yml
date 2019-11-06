@@ -1,0 +1,178 @@
+# Site
+title: DAILIST_TITLE
+subtitle:
+description:
+keywords:
+author: Daily List
+language: en
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://dailylist.github.io/channels/1024019
+root: /channels/1024019/
+permalink: posts/:title/
+
+filename_case: 1
+
+highlight:
+  enable: false
+
+index_generator:
+  per_page: 20
+
+# Pagination
+per_page: 20
+
+
+theme: icarus
+
+# ignore process these dirs to Cache
+ignore:
+   - "**/node_modules/**"
+   # - "**/.git/**"
+   - "**/.*"
+
+sitemap:
+  path: sitemap.xml
+  # category: false
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 30
+  hub:
+  content: true
+  order_by: -date
+  icon: images/logo.jpg
+
+alias:
+  posts/: /
+  page/1/: /
+
+huge_site_plugin:
+  enable: true
+
+theme_config:
+  # Path or URL to the website's icon
+  favicon: /images/favicon.ico
+  # Additional HTML meta tags in an array.
+  meta:
+  # Path or URL to RSS atom.xml
+  rss: /atom.xml
+  # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
+  # logo: /images/logo.svg
+  logo:
+    text: DAILIST_TITLE
+  open_graph:
+    twitter_card: summary
+    updated: false
+  navbar:
+    # Navigation bar menu links
+    menu:
+        Home: /
+        # Archives: /archives/
+        Categories: /categories/
+        Tags: /tags/
+        About: /about/
+  # Footer section link settings
+  footer:
+      # Links to be shown on the right of the footer section
+      links:
+          Creative Commons:
+              icon: fab fa-creative-commons
+              url: 'https://creativecommons.org/'
+          Attribution 4.0 International:
+              icon: fab fa-creative-commons-by
+              url: 'https://creativecommons.org/licenses/by/4.0/'
+          # Download on GitHub:
+          #     icon: fab fa-github
+          #     url: 'https://github.com/ppoffice/hexo-theme-icarus'
+          RSS:
+              icon: fas fa-rss
+              url: /atom.xml
+  # Article display settings
+  article:
+    # Code highlight theme
+    # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+    # highlight: atom-one-light
+    # Whether to show article thumbnail images
+    thumbnail: true
+    # Whether to show estimate article reading time
+    readtime: false
+    og_image: /images/og_image_20190824.png
+  # Index page settings
+  index:
+      tags: true
+  # Archives display settings
+  archives:
+      # layout: default or index
+      layout: index
+  comment:
+    # Name of the comment plugin
+    type: disqus
+    shortname: dailylist-1
+  share:
+    # Share plugin name
+    type: addthis
+    install_url: https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d4f7cd8a2f1b1e2
+    page_tags: true
+    page_index: true
+    page_archives: true
+  widgets:
+    -
+        # Widget name
+        type: category
+        # Where should the widget be placed, left or right
+        position: left
+    -
+        # Widget name
+        type: tagcloud
+        # Where should the widget be placed, left or right
+        position: left
+    -
+        # Widget name
+        type: recent_posts
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: archive
+        # Where should the widget be placed, left or right
+        position: right
+    # Other plugin settings
+  plugins:
+    # Enable page animations
+    animejs: true
+    # Enable the lightGallery and Justified Gallery plugins
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/
+    gallery: false
+    # Enable the Outdated Browser plugin
+    # http://outdatedbrowser.com/
+    outdated-browser: true
+    # Enable the MathJax plugin
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/
+    mathjax: false
+    # Show the back to top button on mobile devices
+    back-to-top: true
+    # Google Analytics plugin settings
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: UA-122971366-3
+    # Baidu Analytics plugin settings
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
+    baidu-analytics:
+        # Baidu Analytics tracking id
+        tracking_id:
+    # Hotjar user feedback plugin
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Hotjar
+    hotjar:
+        # Hotjar site id
+        site_id:
+    # Show a loading progress bar at top of the page
+    progressbar: true
+    # Show the copy button in the highlighted code area
+    clipboard: false
+    # BuSuanZi site/page view counter
+    # https://busuanzi.ibruce.info
+    busuanzi: false
